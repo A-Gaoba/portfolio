@@ -1,13 +1,28 @@
+import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Contact from './components/Contact';
 import Projects from './components/Projects';
+import './app.css'
 
 function App() {
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+
+  const handleMouseMove = (event) => {
+    setCursorPosition({ x: event.pageX, y: event.pageY });
+  };
+  
   return (
-    <div className="cursor-[url(circle.cur),auto] font-mono">
+    <div className= "font-mono cursor-circle " onMouseMove={handleMouseMove}>
+        <div
+        className="cursor"
+        style={{
+          left: `${cursorPosition.x}px`,
+          top: `${cursorPosition.y}px`
+        }}
+      ></div>
       <BrowserRouter>
         <Navbar />
         <Routes>
