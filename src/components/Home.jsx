@@ -13,10 +13,10 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const Home = () => {
-  let navigate = useNavigate();
+  const navigate = useNavigate();
   return (
-    <section className="bg-hero-image h-screen flex justify-center items-center bg-gray-700">
-      <div className="container mx-auto px-4 py-16 font-mono text-white md:w-[800px]">
+    <section className="bg-hero-image h-screen flex justify-center items-center w-full bg-center bg-dunes bg-cover -mt-16">
+      <div className="container mx-auto px-4 py-16 text-white md:w-[800px] mt-12">
         <h1 className="md:text-4xl font-bold mb-6">
           <Typical
             steps={["I'm Abdulrahman Gaoba", 3000]}
@@ -58,12 +58,12 @@ const Home = () => {
           See More About Me
           <ArrowRightAltIcon />
         </motion.button>
-        <div className="mt-8 flex space-x-4 ml-2">
+        <div className="mt-8 flex space-x-8 ml-2">
           <motion.a
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9, duration: 0.8 }}
-            href="https://twitter.com/YOUR_TWITTER_HANDLE"
+            href="https://twitter.com/A_Gaoba"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-sky-400"
@@ -74,7 +74,7 @@ const Home = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.2, duration: 0.8 }}
-            href="https://www.linkedin.com/in/YOUR_LINKEDIN_PROFILE"
+            href="https://www.linkedin.com/in/A-Gaoba"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-[#0072b1]"
@@ -85,10 +85,10 @@ const Home = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.5, duration: 0.8 }}
-            href="https://github.com/YOUR_GITHUB_USERNAME"
+            href="https://github.com/a-gaoba"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[#f5f5f5]"
+            className="hover:text-[#0f0e0e]"
           >
             <FontAwesomeIcon icon={faGithub} className=" text-xl" />
           </motion.a>

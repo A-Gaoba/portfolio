@@ -18,3 +18,9 @@ body {
   background-position: center;
   animation: mymove 5s infinite;
 }
+
+.bg-about-image {
+  background-image: url('./assets/bg.png');
+  background-size: cover;
+  background-position: center;
+}

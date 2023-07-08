@@ -1,6 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
@@ -12,48 +11,19 @@ import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const isDarkMode = true;
   const theme = useTheme();
   const isMobileScreen = useMediaQuery(theme.breakpoints.down("md"));
-
-  useEffect(() => {
-    // Check if dark mode preference is stored in local storage
-    const darkModePreference = localStorage.getItem("darkMode");
-    if (darkModePreference) {
-      setIsDarkMode(JSON.parse(darkModePreference));
-    }
-  }, []);
-
-  useEffect(() => {
-    // Update dark mode styles when isDarkMode state changes
-    if (isDarkMode) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-
-    // Store dark mode preference in local storage
-    localStorage.setItem("darkMode", JSON.stringify(isDarkMode));
-  }, [isDarkMode]);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-  };
-
   return (
-    <AppBar
-      position="static"
-      color={isDarkMode ? "default" : "primary"}
-      elevation={0}
-    >
+    <nav className="text-white bg-[#242735]">
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          <Link to="/" style={{ color: "inherit", textDecoration: "none" }}
-          className="font-bold">
+          <Link to="/" className="font-bold">
             A.Gaoba
           </Link>
         </Typography>
@@ -62,7 +32,7 @@ function Navbar() {
             isOpen ? "block" : "hidden"
           }`}
         >
-          <div className="text-sm lg:flex-grow">
+          <div className="text-sm lg:flex-grow ml-64">
             <Link
               to="/home"
               className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4"
@@ -88,15 +58,9 @@ function Navbar() {
               Contact Me
             </Link>
           </div>
-          <IconButton
-            color="inherit"
-            aria-label="dark mode"
-            onClick={toggleDarkMode}
-            sx={{ ml: 2 }}
-          >
+          <IconButton color="inherit" aria-label="dark mode" sx={{ ml: 2 }}>
             {isDarkMode ? <Brightness7Icon /> : <Brightness4Icon />}
           </IconButton>
-          {/* Render the translation icon here */}
         </div>
         {isMobileScreen ? (
           <IconButton
@@ -105,11 +69,11 @@ function Navbar() {
             aria-label="menu"
             onClick={toggleMenu}
           >
-            {isOpen ? <CloseIcon /> : <MenuIcon />}
+            {isOpen ? <CloseIcon className="text-black" /> : <MenuIcon />}
           </IconButton>
         ) : null}
       </Toolbar>
-    </AppBar>
+    </nav>
   );
 }
 
