@@ -22,7 +22,7 @@ const Home = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.8 }}
-          className="md:text-sm  mb-6"
+          className="text-xs lg:text-base  mb-6"
         >
           Welcome to my website! I am a passionate software engineer, web
           developer, and UI/UX designer, dedicated to crafting exceptional
@@ -33,7 +33,7 @@ const Home = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.8 }}
-          className="md:text-sm  mb-6"
+          className="text-xs lg:text-base  mb-6"
         >
           From conceptualization to implementation, I thrive on creating
           intuitive and visually captivating interfaces that resonate with
