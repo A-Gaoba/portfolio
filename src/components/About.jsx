@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Typical from "react-typical";
+// import Typical from "react-typical";
 import { useNavigate } from "react-router-dom";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
@@ -11,14 +11,22 @@ const AboutMe = () => {
     <div className="flex flex-wrap justify-center items-center h-screen bg-about-image p-8 -mt-16">
       <div className="w-full md:w-1/2 mt-16">
         <div className="p-8 text-slate-100">
-          <h1 className="md:text-4xl font-bold mb-6">
+          {/* <h1 className="md:text-4xl font-bold mb-6">
             <Typical
               steps={["I'm Abdulrahman Gaoba", 3000]}
               loop={Infinity}
               wrapper="span"
               className="text-gray-300"
             />
-          </h1>
+          </h1> */}
+          <motion.h1
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.8 }}
+            className="md:text-4xl font-bold mb-6"
+          >
+            I&rsquo;m Abdulrahman Gaoba
+          </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}

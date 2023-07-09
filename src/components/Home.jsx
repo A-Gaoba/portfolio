@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
-import Typical from "react-typical";
 
 import "../app.css";
 import {
@@ -17,13 +16,21 @@ const Home = () => {
   return (
     <section className="bg-hero-image h-screen flex justify-center items-center w-full bg-center bg-dunes bg-cover -mt-16">
       <div className="container mx-auto px-4 py-16 text-white md:w-[800px] mt-12">
-        <h1 className="md:text-4xl font-bold mb-6">
+        {/* <h1 className="md:text-4xl font-bold mb-6">
           <Typical
             steps={["I'm Abdulrahman Gaoba", 3000]}
             loop={Infinity}
             wrapper="span"
           />
-        </h1>
+        </h1> */}
+          <motion.h1
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.8 }}
+            className="md:text-4xl font-bold mb-6"
+          >
+            I&rsquo;m Abdulrahman Gaoba
+          </motion.h1>
           <motion.p
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
