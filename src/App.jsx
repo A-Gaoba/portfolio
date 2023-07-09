@@ -14,7 +14,7 @@ function App() {
   };
   
   return (
-    <div className= "font-mono cursor-circle " onMouseMove={handleMouseMove}>
+    <div className= "font-mono cursor-circle h-screen bg-[#242735] " onMouseMove={handleMouseMove}>
         <div
         className="cursor"
         style={{

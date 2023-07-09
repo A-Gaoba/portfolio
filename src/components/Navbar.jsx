@@ -9,6 +9,7 @@ import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
+
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const isDarkMode = true;
@@ -18,6 +19,13 @@ function Navbar() {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  const navLinks = [
+    { to: "/home", label: "Home" },
+    { to: "/about", label: "About" },
+    { to: "/projects", label: "Projects" },
+    { to: "/contact", label: "Contact Me" },
+  ];
 
   return (
     <nav className="text-white bg-[#242735]">
@@ -33,30 +41,15 @@ function Navbar() {
           }`}
         >
           <div className="text-sm lg:flex-grow ml-64">
-            <Link
-              to="/home"
-              className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4"
-            >
-              Home
-            </Link>
-            <Link
-              to="/about"
-              className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4"
-            >
-              About
-            </Link>
-            <Link
-              to="/projects"
-              className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4"
-            >
-              Projects
-            </Link>
-            <Link
-              to="/contact"
-              className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4"
-            >
-              Contact Me
-            </Link>
+            {navLinks.map((link, index) => (
+              <Link
+                key={index}
+                to={link.to}
+                className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4"
+              >
+                {link.label}
+              </Link>
+            ))}
           </div>
           <IconButton color="inherit" aria-label="dark mode" sx={{ ml: 2 }}>
             {isDarkMode ? <Brightness7Icon /> : <Brightness4Icon />}

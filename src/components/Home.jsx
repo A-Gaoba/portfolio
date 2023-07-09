@@ -3,25 +3,13 @@ import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
-import {
-  faTwitter,
-  faLinkedin,
-  faGithub,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
+import { faTwitter, faLinkedin, faGithub, faInstagram} from "@fortawesome/free-brands-svg-icons";
 
 const Home = () => {
   const navigate = useNavigate();
   return (
-    <section className="bg-hero-image h-screen flex justify-center items-center w-full bg-center bg-dunes bg-cover -mt-16">
+    <section className="bg-hero-image md:h-screen h-aout flex justify-center items-center w-full bg-center bg-dunes bg-cover -mt-16">
       <div className="container mx-auto px-4 py-16 text-white md:w-[800px] mt-12">
-        {/* <h1 className="md:text-4xl font-bold mb-6">
-          <Typical
-            steps={["I'm Abdulrahman Gaoba", 3000]}
-            loop={Infinity}
-            wrapper="span"
-          />
-        </h1> */}
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -58,7 +46,7 @@ const Home = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.8 }}
-          className="hover:p-4 text-md py-3"
+          className="hover:px-4 hover:text-sky-400 text-md py-3"
           onClick={() => navigate("/about")}
         >
           See More About Me
@@ -102,7 +90,7 @@ const Home = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.8, duration: 0.8 }}
-            href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME"
+            href="https://www.instagram.com/a-gaoba"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-[#fccc63]"

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
 import image from "../assets/about33.gif";
@@ -22,10 +22,15 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex flex-wrap justify-center items-center h-screen bg-[#242735] p-8 gap-4">
-      <div className="w-full md:w-1/3">
-        <h1 className="text-white text-4xl font-bold mb-8">Contact</h1>
-        <p className="text-white text-md mb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima similique quo animi voluptatem cum</p>
+    <div className="flex flex-wrap justify-center items-center h-auto bg-[#242735] p-8 flex-col-reverse">
+      <div className="w-full md:w-1/2">
+        <h1 className="text-white text-4xl font-bold mb-8 hidden lg:block">
+          Contact
+        </h1>
+        <p className="text-white text-md mb-8 text-xs lg:text-base">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
+          similique quo animi voluptatem cum
+        </p>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <input
@@ -64,17 +69,17 @@ const Contact = () => {
           >
             Send Message
           </button>
-          <br/>
+          <br />
           <motion.button
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6, duration: 0.8 }}
-          className="hover:p-4 text-md py-3 text-white"
-          onClick={() => navigate("/home")}
-        >
-          Come back to Home
-          <ArrowRightAltIcon />
-        </motion.button>
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6, duration: 0.8 }}
+            className="hover:px-4 hover:text-sky-400 text-md text-white mt-6"
+            onClick={() => navigate("/home")}
+          >
+            Come back to Home
+            <ArrowRightAltIcon />
+          </motion.button>
         </form>
       </div>
       <div className="w-full md:w-1/2">

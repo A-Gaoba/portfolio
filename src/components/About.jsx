@@ -8,17 +8,9 @@ import image from "../assets/about2.gif";
 const AboutMe = () => {
   const navigate = useNavigate();
   return (
-    <div className="flex flex-wrap justify-center items-center h-screen bg-about-image p-8 -mt-16">
-      <div className="w-full md:w-1/2 mt-16">
+    <div className="flex flex-wrap justify-center items-center h-aout md:h-screen  bg-about-image p-8 -mt-16 flex-col-reverse md:flex-row">
+      <div className="w-full md:w-1/2 md:mt-16 flex justify-center">
         <div className="p-8 text-slate-100">
-          {/* <h1 className="md:text-4xl font-bold mb-6">
-            <Typical
-              steps={["I'm Abdulrahman Gaoba", 3000]}
-              loop={Infinity}
-              wrapper="span"
-              className="text-gray-300"
-            />
-          </h1> */}
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -31,7 +23,7 @@ const AboutMe = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="md:text-sm  mb-6"
+            className="text-xs lg:text-base  mb-6"
           >
             Welcome to my website! I am a passionate software engineer, web
             developer, and UI/UX designer, dedicated to crafting exceptional
@@ -43,7 +35,7 @@ const AboutMe = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="md:text-sm  mb-6"
+            className="text-xs lg:text-base  mb-6"
           >
             From conceptualization to implementation, I thrive on creating
             intuitive and visually captivating interfaces that resonate with
@@ -56,7 +48,7 @@ const AboutMe = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
-            className="hover:p-4 text-md py-3 px-4 text-white rounded-md"
+            className="hover:px-4 hover:text-sky-400 text-md "
             onClick={() => navigate("/contact")}
           >
             Contact Me
@@ -64,7 +56,7 @@ const AboutMe = () => {
           </motion.button>
         </div>
       </div>
-      <div className="w-full md:w-1/2">
+      <div className="w-full md:w-1/2 flex justify-center">
         <img src={image} alt="Profile"  />
       </div>
     </div>
