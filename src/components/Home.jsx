@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
-import "../app.css";
 import {
   faTwitter,
   faLinkedin,
