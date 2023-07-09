@@ -22,7 +22,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex flex-wrap justify-center items-center h-auto bg-[#242735] p-8 flex-col-reverse">
+    <div className="flex flex-wrap justify-center items-center lg:h-screen h-auto bg-[#242735] p-12 flex-col-reverse">
       <div className="w-full md:w-1/2">
         <h1 className="text-white text-4xl font-bold mb-8 hidden lg:block">
           Contact
