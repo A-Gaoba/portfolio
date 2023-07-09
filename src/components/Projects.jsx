@@ -1,11 +1,10 @@
 function Projects() {
   const sections = [
-    { title: "Key Partners:", width: "w-[300px]", height: "h-[400px]" },
-    { title: "Key activities:", width: "w-[400px]", height: "h-[300px]", margin:"mt-12" },
-    { title: "Value propositions:", width: "w-[400px]", height: "h-[400px]" },
-    { title: "Customer relationships:", width: "w-[400px]", height: "h-[300px]" },
-    { title: "Customer segments:", width: "w-[300px]", height: "h-[300px]", margin:"-mt-12 lg:mt-4"},
-    { title: "Key resources:", width: "w-[300px]", height: "h-[300px]" },
+    { title: "Porject number 1:", width: "w-[300px]", height: "h-[400px]" },
+    { title: "Porject number 1:", width: "w-[400px]", height: "h-[300px]", margin:"mt-12" },
+    { title: "Porject number 1:", width: "w-[400px]", height: "h-[400px]" },
+    { title: "Porject number 1:", width: "w-[400px]", height: "h-[300px]" },
+    { title: "Porject number 1:", width: "w-[300px]", height: "h-[300px]", margin:"-mt-12 lg:mt-4"},
   ];
 
   
