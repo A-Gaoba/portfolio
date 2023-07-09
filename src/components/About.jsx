@@ -25,11 +25,10 @@ const AboutMe = () => {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="text-xs lg:text-base  mb-6"
           >
-            Welcome to my website! I am a passionate software engineer, web
-            developer, and UI/UX designer, dedicated to crafting exceptional
-            digital experiences. With a strong background in coding, I bring
-            ideas to life by seamlessly merging functionality with stunning
-            design.
+            At the core, I am a programmer with a boundless curiosity and a love
+            for problem-solving. With a strong foundation in software
+            engineering, my journey led me to explore the realms of web
+            development and UI/UX design.
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: -20 }}
@@ -37,12 +36,11 @@ const AboutMe = () => {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="text-xs lg:text-base  mb-6"
           >
-            From conceptualization to implementation, I thrive on creating
-            intuitive and visually captivating interfaces that resonate with
-            users. Whether it&rsquo;s building responsive websites or designing
-            immersive user journeys, I am committed to delivering innovative
-            solutions that exceed expectations. Join me on this journey as we
-            transform ideas into captivating digital realities.
+            Fusing these skills together, I strive to create digital experiences
+            that strike the perfect balance between aesthetics and
+            functionality. Committed to staying on the cutting edge of
+            technology, I am constantly evolving my craft to meet the
+            ever-changing demands of the digital landscape.
           </motion.p>
           <motion.button
             initial={{ opacity: 0, y: -20 }}
@@ -57,7 +55,7 @@ const AboutMe = () => {
         </div>
       </div>
       <div className="w-full md:w-1/2 flex justify-center">
-        <img src={image} alt="Profile"  />
+        <img src={image} alt="Profile" />
       </div>
     </div>
   );

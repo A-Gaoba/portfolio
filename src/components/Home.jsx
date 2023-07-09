@@ -1,33 +1,39 @@
 import { motion } from "framer-motion";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
-import { faTwitter, faLinkedin, faGithub, faInstagram} from "@fortawesome/free-brands-svg-icons";
+import {
+  faTwitter,
+  faLinkedin,
+  faGithub,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Home = () => {
   const navigate = useNavigate();
   return (
     <section className="bg-hero-image md:h-screen h-aout flex justify-center items-center w-full bg-center bg-dunes bg-cover -mt-16">
       <div className="container mx-auto px-4 py-16 text-white md:w-[800px] mt-12">
-          <motion.h1
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.8 }}
-            className="md:text-4xl font-bold mb-6"
-          >
-            I&rsquo;m Abdulrahman Gaoba
-          </motion.h1>
-          <motion.p
+        <motion.h1
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
+          // className="md:text-4xl font-bold mb-6"
+          className="md:text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-stone-100 via-rose-900 to-yellow-100"
+        >
+          I&rsquo;m Abdulrahman Gaoba
+        </motion.h1>
+        <motion.p
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.8 }}
           className="text-xs lg:text-base  mb-6"
         >
-          Welcome to my website! I am a passionate software engineer, web
-          developer, and UI/UX designer, dedicated to crafting exceptional
-          digital experiences. With a strong background in coding, I bring ideas
-          to life by seamlessly merging functionality with stunning design.
+          Welcome to my world of innovation and creativity! As a passionate
+          software engineer and web developer with a keen eye for captivating
+          UI/UX design, I bring dreams to life through elegant and functional
+          solutions.
         </motion.p>
         <motion.p
           initial={{ opacity: 0, y: -20 }}
@@ -35,12 +41,10 @@ const Home = () => {
           transition={{ delay: 0.3, duration: 0.8 }}
           className="text-xs lg:text-base  mb-6"
         >
-          From conceptualization to implementation, I thrive on creating
-          intuitive and visually captivating interfaces that resonate with
-          users. Whether it&rsquo;s building responsive websites or designing
-          immersive user journeys, I am committed to delivering innovative
-          solutions that exceed expectations. Join me on this journey as we
-          transform ideas into captivating digital realities.
+          With a relentless drive to deliver excellence, I thrive on crafting
+          seamless user experiences that leave a lasting impression. Explore my
+          portfolio, and let&lsquo;s embark on an extraordinary digital journey
+          together.
         </motion.p>
         <motion.button
           initial={{ opacity: 0, y: -20 }}
