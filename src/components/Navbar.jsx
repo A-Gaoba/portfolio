@@ -35,37 +35,51 @@ function Navbar() {
             A.Gaoba
           </Link>
         </Typography>
-        <div
-          className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${
-            isOpen ? "block" : "hidden"
-          }`}
-        >
-          <div className="text-sm lg:flex-grow ml-64">
-            {navLinks.map((link, index) => (
-              <Link
-                key={index}
-                to={link.to}
-                className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </div>
-          <IconButton color="inherit" aria-label="dark mode" sx={{ ml: 2 }}>
-            {isDarkMode ? <Brightness7Icon /> : <Brightness4Icon />}
-          </IconButton>
-        </div>
         {isMobileScreen ? (
           <IconButton
             edge="end"
             color="inherit"
             aria-label="menu"
             onClick={toggleMenu}
+            className=""
           >
-            {isOpen ? <CloseIcon className="text-black" /> : <MenuIcon />}
+            {isOpen ? <CloseIcon className="text-white" /> : <MenuIcon />}
           </IconButton>
-        ) : null}
+        ) : (
+          <div
+            className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto`}
+          >
+            <div className="text-sm lg:flex-grow ml-4">
+              {navLinks.map((link, index) => (
+                <Link
+                  key={index}
+                  to={link.to}
+                  className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+            <IconButton color="inherit" aria-label="dark mode" sx={{ ml: 2 }}>
+              {isDarkMode ? <Brightness7Icon /> : <Brightness4Icon />}
+            </IconButton>
+          </div>
+        )}
       </Toolbar>
+      {isMobileScreen && isOpen && (
+        <div className="w-full block mt-4 ml-4">
+          {navLinks.map((link, index) => (
+            <Link
+              key={index}
+              to={link.to}
+              className="block mt-4 text-white-200"
+              onClick={toggleMenu}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+      )}
     </nav>
   );
 }
