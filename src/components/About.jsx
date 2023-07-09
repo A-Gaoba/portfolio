@@ -10,7 +10,7 @@ const AboutMe = () => {
   return (
     <div className="flex flex-wrap justify-center items-center h-aout md:h-screen  bg-about-image p-8 -mt-16 flex-col-reverse md:flex-row">
       <div className="w-full md:w-1/2 md:mt-16 flex justify-center">
-        <div className="p-8 text-slate-100">
+        <div className="md:p-8 text-slate-100">
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
