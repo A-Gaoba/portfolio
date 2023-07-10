@@ -25,7 +25,7 @@ function TypingAnimation({ text }) {
 function Expertise() {
   return (
     <div className="h-screen flex items-center text-white mt-10 flex-col bg-expertise-image">
-      <h1 className="text-4xl font-bold mb-8">My Expertise</h1>
+      <h1 className="text-4xl font-bold p-8">My Expertise</h1>
       <div className="flex flex-wrap justify-center">
         <motion.div
           className="border p-6"
