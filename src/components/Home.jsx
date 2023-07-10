@@ -12,18 +12,28 @@ import {
 
 const Home = () => {
   const navigate = useNavigate();
+
+  function TypingAnimation({ text }) {
+    return (
+      <h1 className="md:text-4xl font-bold mb-6 bg-clip-text text-transparent text-white">
+        {text.split("").map((char, index) => (
+          <motion.span
+            key={index}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+          >
+            {char}
+          </motion.span>
+        ))}
+      </h1>
+    );
+  }
+
   return (
-    <section className="bg-hero-image md:h-screen h-aout flex justify-center items-center w-full bg-center bg-dunes bg-cover -mt-16">
+    <section className="bg-hero-image md:h-screen h-aout flex justify-center items-center w-full bg-center bg-dunes bg-cover -mt-16" >
       <div className="container mx-auto px-4 py-16 text-white md:w-[800px] mt-12">
-        <motion.h1
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3, duration: 0.8 }}
-          // className="md:text-4xl font-bold mb-6"
-          className="md:text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-stone-100 via-rose-900 to-yellow-100"
-        >
-          I&rsquo;m Abdulrahman Gaoba
-        </motion.h1>
+        <TypingAnimation text = "I&rsquo;m Abdulrahman Gaoba" />  
         <motion.p
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}

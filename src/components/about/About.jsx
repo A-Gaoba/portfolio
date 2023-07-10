@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
-import image from "../assets/about2.gif";
+import image from "../../assets/about2.gif";
 
 const AboutMe = () => {
   const navigate = useNavigate();

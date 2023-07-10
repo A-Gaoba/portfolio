@@ -48,3 +48,9 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+.bg-expertise-image {
+  background-image: url("./assets/bg-ex.png");
+  background-size: cover;
+  background-position: center;
+}
