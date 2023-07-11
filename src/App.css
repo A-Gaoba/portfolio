@@ -16,7 +16,8 @@ body {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background-color: rgb(255, 254, 254);
+  border: 2px solid aqua;
+  /* background-color: rgb(122, 203, 203); */
   opacity: 0.5;
   pointer-events: none;
   transition: transform 0.3s ease-in-out;
