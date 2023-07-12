@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-// import Typical from "react-typical";
 import { useNavigate } from "react-router-dom";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
+import TypingAnimation from "../TypingAnimation";
 import image from "../../assets/about2.gif";
 
 const AboutMe = () => {
@@ -11,14 +11,7 @@ const AboutMe = () => {
     <div className="flex flex-wrap justify-center items-center h-aout md:h-screen  bg-about-image p-8 -mt-16 flex-col-reverse md:flex-row">
       <div className="w-full md:w-1/2 md:mt-16 flex justify-center">
         <div className="md:p-8 text-slate-100">
-          <motion.h1
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.8 }}
-            className="md:text-4xl font-bold mb-6"
-          >
-            I&rsquo;m Abdulrahman Gaoba
-          </motion.h1>
+        <TypingAnimation text="I&rsquo;m Abdulrahman Gaoba" />
           <motion.p
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}

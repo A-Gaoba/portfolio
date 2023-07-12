@@ -28,8 +28,8 @@ const Contact = () => {
           Contact
         </h1>
         <p className="text-white text-md mb-8 text-xs lg:text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
-          similique quo animi voluptatem cum
+          Got an exciting project in need of help? Don't hesitate to get in
+          touch by sending me an email!
         </p>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">

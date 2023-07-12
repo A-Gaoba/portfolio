@@ -62,7 +62,7 @@ function Navbar() {
           <div
             className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto`}
           >
-            <div className="text-sm lg:flex-grow ml-64">
+            <div className="text-sm lg:flex-grow ml-4">
               {navLinks.map((link, index) => (
                 <MotionLink
                   key={index}
