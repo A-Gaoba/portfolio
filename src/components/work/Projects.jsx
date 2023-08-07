@@ -2,8 +2,11 @@ import { motion } from "framer-motion";
 import ProjectsList from './ProjectsList';
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import TypingAnimation from "../TypingAnimation";
+import { useNavigate } from "react-router-dom";
 
 const ProjectsSection = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="p-16">
       <TypingAnimation text="My Projects" />
