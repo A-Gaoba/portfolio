@@ -74,7 +74,7 @@ const Home = () => {
         <motion.button
           {...animateElement}
           className="hover:px-4 hover:text-sky-400 text-md py-3"
-          onClick={() => navigate("/#about")}
+          onClick={() => navigate("/about")}
         >
           See More About Me
           <ArrowRightAltIcon />

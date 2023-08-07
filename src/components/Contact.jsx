@@ -28,7 +28,7 @@ const Contact = () => {
           Contact
         </h1>
         <p className="text-white text-md mb-8 text-xs lg:text-base">
-          Got an exciting project in need of help? Don't hesitate to get in
+          Got an exciting project in need of help? Don&apos;t hesitate to get in
           touch by sending me an email!
         </p>
         <form onSubmit={handleSubmit}>
@@ -75,7 +75,7 @@ const Contact = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
             className="hover:px-4 hover:text-sky-400 text-md text-white mt-6"
-            onClick={() => navigate("/#home")}
+            onClick={() => navigate("/home")}
           >
             Come back to Home
             <ArrowRightAltIcon />
