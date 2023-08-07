@@ -1,6 +1,7 @@
 import { motion, useAnimation } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
 import { useInView } from "react-intersection-observer";
+import PropTypes from "prop-types";
 
 import "../../App.css";
 import reactIcon from "../../assets/software-engineer.png";
@@ -10,37 +11,38 @@ import design from "../../assets/designer.png";
 function TypingAnimation({ text }) {
   const [isVisible, setIsVisible] = useState(false);
   const [ref, inView] = useInView({
-    triggerOnce: false, // Change this to "false" to repeat the animation
-    threshold: 0.5, // Change this threshold as needed
+    triggerOnce: false,
+    threshold: 0.5,
   });
 
   useEffect(() => {
     if (inView) {
       setIsVisible(true);
-    }
-  }, [inView]);
-
-  useEffect(() => {
-    if (!inView) {
+    } else {
       setIsVisible(false);
     }
   }, [inView]);
 
   return (
     <h2 ref={ref} className="text-bold text-2xl w-56">
-      {text.split("").map((char, index) => (
-        <motion.span
-          key={index}
-          initial={{ opacity: 0 }}
-          animate={isVisible ? { opacity: 1 } : {}}
-          transition={{ duration: 0.5, delay: index * 0.1 }}
-        >
-          {char}
-        </motion.span>
-      ))}
+      {text &&
+        text.split("").map((char, index) => (
+          <motion.span
+            key={index}
+            initial={{ opacity: 0 }}
+            animate={isVisible ? { opacity: 1 } : {}}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+          >
+            {char}
+          </motion.span>
+        ))}
     </h2>
   );
 }
+
+TypingAnimation.propTypes = {
+  text: PropTypes.string.isRequired,
+};
 
 function Expertise() {
   const animationControls = useAnimation();
@@ -86,8 +88,13 @@ function Expertise() {
   }, [animationControls]);
 
   return (
-    <div className="md:h-screen h-auto flex items-center text-white flex-col -mt-8 bg-expertise-image">
-      <h1 className="text-4xl font-bold p-8 mt-8">My Expertise</h1>
+    <div
+      id="myExpertise"
+      className="md:h-screen h-auto flex items-center text-white flex-col -mt-8 bg-expertise-image"
+    >
+      <h1 className="text-4xl font-bold p-8 ml-8 mt-8 self-start">
+        My Expertise
+      </h1>
       <div className="flex flex-wrap justify-center">
         <motion.div
           className="border p-6"
