@@ -13,11 +13,11 @@ body {
 .cursor {
   position: fixed;
   z-index: 9999;
-  width: 25px;
-  height: 25px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
   border: 2px solid aqua;
-  /* background-color: rgb(122, 203, 203); */
+  background-color: rgb(122, 203, 203);
   opacity: 0.5;
   pointer-events: none;
   transition: transform 0.3s ease-in-out;
@@ -37,7 +37,6 @@ body {
 }
 
 .bg-hero-image {
-  /* Specify the URL of the GIF image */
   background-image: url("./assets/coding.gif");
   background-size: cover;
   background-position: center;
