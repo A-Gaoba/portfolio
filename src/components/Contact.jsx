@@ -13,9 +13,6 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Send message logic
-    // You can use the name, email, and message values to send the message
-    // Reset the form fields after sending the message
     setName("");
     setEmail("");
     setMessage("");
@@ -31,7 +28,12 @@ const Contact = () => {
           Got an exciting project in need of help? Don&apos;t hesitate to get in
           touch by sending me an email!
         </p>
-        <form onSubmit={handleSubmit}>
+        <motion.form
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 0.8 }}
+          onSubmit={handleSubmit}
+        >
           <div className="mb-4">
             <input
               type="text"
@@ -80,7 +82,7 @@ const Contact = () => {
             Come back to Home
             <ArrowRightAltIcon />
           </motion.button>
-        </form>
+        </motion.form>
       </div>
       <div className="w-full md:w-1/2">
         <img src={image} alt="Profile" />

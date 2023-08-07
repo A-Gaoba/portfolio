@@ -53,19 +53,13 @@ const Home = () => {
     <section className="bg-hero-image md:h-screen h-aout flex justify-center items-center w-full bg-center bg-dunes bg-cover -mt-16">
       <div className="container mx-auto px-4 py-16 text-white md:w-[800px] mt-12">
         <TypingAnimation text="I&rsquo;m Abdulrahman Gaoba" />
-        <motion.p
-          {...animateElement}
-          className="text-xs lg:text-base mb-6"
-        >
+        <motion.p {...animateElement} className="text-xs lg:text-base mb-6">
           Welcome to my world of innovation and creativity! As a passionate
           software engineer and web developer with a keen eye for captivating
           UI/UX design, I bring dreams to life through elegant and functional
           solutions.
         </motion.p>
-        <motion.p
-          {...animateElement}
-          className="text-xs lg:text-base mb-6"
-        >
+        <motion.p {...animateElement} className="text-xs lg:text-base mb-6">
           With a relentless drive to deliver excellence, I thrive on crafting
           seamless user experiences that leave a lasting impression. Explore my
           portfolio, and let‘s embark on an extraordinary digital journey
@@ -88,8 +82,12 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
               className={item.color}
+              transition={{ duration: 0.5, delay: index * 0.15 }}
             >
-              <FontAwesomeIcon icon={item.icon} className="text-xl" />
+              <FontAwesomeIcon
+                icon={item.icon}
+                className="text-xl hover:text-2xl"
+              />
             </motion.a>
           ))}
         </div>

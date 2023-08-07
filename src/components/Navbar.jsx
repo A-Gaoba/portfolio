@@ -25,7 +25,6 @@ function Navbar() {
     setIsOpen(!isOpen);
     setActiveLink("");
   };
-  
 
   const navLinks = [
     { to: "/home", label: "Home" },
@@ -35,7 +34,7 @@ function Navbar() {
   ];
 
   return (
-    <nav className="text-white bg-[#242735]">
+    <nav className="text-white bg-[#242735] ">
       <Toolbar>
         <MotionTypography
           variant="h6"
@@ -46,7 +45,7 @@ function Navbar() {
           transition={{ duration: 0.5 }}
         >
           <Link to="/" className="font-bold">
-            A.Gaoba
+            A_Gaoba
           </Link>
         </MotionTypography>
         {isMobileScreen ? (
@@ -55,8 +54,15 @@ function Navbar() {
             color="inherit"
             aria-label="menu"
             onClick={toggleMenu}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
           >
-            {isOpen ? <CloseIcon className="text-white" /> : <MenuIcon />}
+            {isOpen ? (
+              <CloseIcon className="text-white" />
+            ) : (
+              <MenuIcon />
+            )}
           </IconButton>
         ) : (
           <div
@@ -67,11 +73,11 @@ function Navbar() {
                 <MotionLink
                   key={index}
                   to={link.to}
-                  className={`block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4 ${activeLink === link.to ? "text-blue-500 underline" : ""}`}
+                  className={`block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4 font-bold bg-sky-400 py-2 px-4 rounded-lg ${activeLink === link.to ? "text-black" : ""}`}
                   onClick={() => setActiveLink(link.to)}
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  transition={{ duration: 0.5, delay: index * 0.15 }}
                 >
                   {link.label}
                 </MotionLink>
@@ -83,7 +89,7 @@ function Navbar() {
               sx={{ ml: 2 }}
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: navLinks.length * 0.1 }}
+              transition={{ duration: 0.5, delay: navLinks.length * 0.15 }}
             >
               {isDarkMode ? <Brightness7Icon /> : <Brightness4Icon />}
             </IconButton>
@@ -96,11 +102,11 @@ function Navbar() {
             <MotionLink
               key={index}
               to={link.to}
-              className="block mt-4 text-white-200"
+              className="block mt-4 text-white-200 "
               onClick={toggleMenu}
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.5, delay: index * 0.15 }}
             >
               {link.label}
             </MotionLink>

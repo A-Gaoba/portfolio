@@ -1,9 +1,10 @@
-import { motion } from "framer-motion";
+import PropTypes from 'prop-types';
+import { motion } from 'framer-motion';
 
 function TypingAnimation({ text }) {
   return (
     <h1 className="md:text-4xl font-bold mb-6 bg-clip-text text-transparent text-white">
-      {text.split("").map((char, index) => (
+      {text.split('').map((char, index) => (
         <motion.span
           key={index}
           initial={{ opacity: 0 }}
@@ -16,5 +17,9 @@ function TypingAnimation({ text }) {
     </h1>
   );
 }
+
+TypingAnimation.propTypes = {
+  text: PropTypes.string.isRequired,
+};
 
 export default TypingAnimation;
