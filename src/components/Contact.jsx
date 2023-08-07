@@ -75,7 +75,7 @@ const Contact = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
             className="hover:px-4 hover:text-sky-400 text-md text-white mt-6"
-            onClick={() => navigate("/home")}
+            onClick={() => navigate("/#home")}
           >
             Come back to Home
             <ArrowRightAltIcon />

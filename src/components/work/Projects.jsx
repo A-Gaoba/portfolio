@@ -16,7 +16,7 @@ const ProjectsSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
             className="hover:px-4 hover:text-sky-400 text-md mt-12 text-white"
-            onClick={() => navigate("/contact")}
+            onClick={() => navigate("/#contact")}
           >
             Contact Me
             <ArrowRightAltIcon />
