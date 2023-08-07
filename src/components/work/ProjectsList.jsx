@@ -1,4 +1,4 @@
-import ProjectCard from "./projectCard";
+import ProjectCard from './projectCard';
 
 const ProjectsList = () => {
   const projects = [
