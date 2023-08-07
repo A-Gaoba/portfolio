@@ -73,7 +73,7 @@ function Navbar() {
                 <MotionLink
                   key={index}
                   to={link.to}
-                  className={`block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4 font-bold bg-sky-400 py-2 px-4 rounded-lg ${activeLink === link.to ? "text-black" : ""}`}
+                  className={`block mt-4 lg:inline-block lg:mt-0 text-white-200 font-bold hover:text-base py-2 px-4 rounded-lg ${activeLink === link.to ? "text-sky-400 underline text-base" : ""}`}
                   onClick={() => setActiveLink(link.to)}
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
