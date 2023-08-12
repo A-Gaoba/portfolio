@@ -8,14 +8,14 @@ const AboutMe = () => {
   const navigate = useNavigate();
 
   const scrollToMyExer = () => {
-    const myExpertise = document.getElementById('myExpertise'); // Replace with the actual ID of your MyExer section
+    const myExpertise = document.getElementById("myExpertise"); // Replace with the actual ID of your MyExer section
     if (myExpertise) {
-      myExpertise.scrollIntoView({ behavior: 'smooth' });
+      myExpertise.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
-    <div className="flex flex-wrap justify-center items-center h-aout md:h-screen  bg-[url(assets/coding.gif)] p-8 -mt-16 flex-col-reverse md:flex-row">
+    <div className="flex flex-wrap justify-center items-center h-aout md:h-screen  bg-about-image p-8 -mt-16 flex-col-reverse md:flex-row">
       <div className="w-full md:w-1/2 md:mt-16 flex justify-center">
         <div className="md:p-8 text-slate-100">
           <TypingAnimation text="I&rsquo;m Abdulrahman Gaoba" />
