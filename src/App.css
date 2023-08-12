@@ -37,7 +37,7 @@ body {
 }
 
 .bg-hero-image {
-  background-image: url("../public/assets/coding.gif");
+  background-image: url("../public/assets/coding.webm");
   background-size: cover;
   background-position: center;
   animation: mymove 5s infinite;
