@@ -15,7 +15,7 @@ const AboutMe = () => {
   };
 
   return (
-    <div className="flex flex-wrap justify-center items-center h-aout md:h-screen  bg-[url(assets/bg.png)] bg-center bg-dunes bg-cover bg-no-repeat p-8 -mt-16 flex-col-reverse md:flex-row">
+    <div className="flex flex-wrap justify-center items-center h-aout md:h-screen  bg-about-image p-8 -mt-16 flex-col-reverse md:flex-row">
       <div className="w-full md:w-1/2 md:mt-16 flex justify-center">
         <div className="md:p-8 text-slate-100">
           <TypingAnimation text="I&rsquo;m Abdulrahman Gaoba" />
