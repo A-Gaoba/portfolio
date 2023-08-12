@@ -62,7 +62,7 @@ const AboutMe = () => {
         <img src="assets/about.gif" alt="Profile" />
       </div>
 
-      <div className="absolute sm:bottom-10 bottom-32 w-full md:flex justify-center items-center hidden">
+      <div className="absolute sm:bottom-10 bottom-32 md:flex justify-center items-center hidden w-24">
         <div
           className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2 cursor-pointer"
           onClick={scrollToMyExer}
