@@ -55,7 +55,7 @@ const Home = () => {
   };
 
   return (
-    <section className="bg-hero-image md:h-screen h-aout flex justify-center items-center w-full bg-center bg-dunes bg-cover md:-mt-24">
+    <section className="md:h-screen h-aout flex justify-center items-center w-full md:-mt-6">
       <div className="container mx-auto px-4 py-16 text-white md:w-[800px] mt-12">
         <TypingAnimation text="I’m Abdulrahman Gaoba" />
         <motion.p {...animateElement} className="text-xs lg:text-base mb-6">
@@ -78,7 +78,7 @@ const Home = () => {
           See More About Me
           <ArrowRightAltIcon />
         </motion.button>
-        <div className="mt-8 flex space-x-8 ml-2">
+        <div className="mt-8 flex space-x-8 ">
           {socialMediaLinks.map((item, index) => (
             <motion.a
               key={index}
@@ -92,7 +92,7 @@ const Home = () => {
             >
               <FontAwesomeIcon
                 icon={item.icon}
-                className="text-xl hover:text-2xl"
+                className="text-xl hover:text-2xl hover:bg-white hover:rounded-xl hover:p-2 transition-all ease-in-out duration-300"
                 alt={item.name}
               />
             </motion.a>

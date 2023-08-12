@@ -36,21 +36,29 @@ body {
   }
 }
 
-.bg-hero-image {
-  background-image: url("../public/assets/coding.webm");
+/* .bg-hero-image {
+  background-image: url("/assets/coding.webm");
   background-size: cover;
   background-position: center;
   animation: mymove 5s infinite;
-}
+} */
+
+/* .video-background {
+  background: url("/assets/coding.webm");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+} */
 
 .bg-about-image {
-  background-image: url("../public/assets/bg.png");
+  background-image: url("/assets/bg.png");
   background-size: cover;
   background-position: center;
 }
 
 .bg-expertise-image {
-  background-image: url("../public/assets/bg-exp.png");
+  background-image: url("/assets/bg-exp.png");
   background-size: cover;
   background-position: center;
 }
