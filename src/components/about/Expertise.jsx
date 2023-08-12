@@ -4,9 +4,6 @@ import { useInView } from "react-intersection-observer";
 import PropTypes from "prop-types";
 
 import "../../App.css";
-import reactIcon from "../../assets/software-engineer.png";
-import Web from "../../assets/web-development.png";
-import design from "../../assets/designer.png";
 
 function TypingAnimation({ text }) {
   const [isVisible, setIsVisible] = useState(false);
@@ -104,7 +101,7 @@ function Expertise() {
           animate={animationControls}
         >
           <div className="font-bold text-white flex items-center gap-4">
-            <img src={reactIcon} alt="" className="w-12 h-12" />
+            <img src="assets/software-engineer.png" alt="" className="w-12 h-12" />
             <TypingAnimation text="Software Engineer" />
           </div>
           <div className="flex">
@@ -132,7 +129,7 @@ function Expertise() {
           animate={animationControls}
         >
           <div className="font-bold text-white flex items-center gap-4">
-            <img src={Web} alt="" className="w-12 h-12" />
+            <img src="assets/web-development.png" alt="" className="w-12 h-12" />
             <TypingAnimation text="Front End Developer" />
           </div>
           <div className="flex">
@@ -162,7 +159,7 @@ function Expertise() {
           animate={animationControls}
         >
           <div className="font-bold text-white flex items-center gap-4">
-            <img src={design} alt="" className="w-12 h-12 text-white" />
+            <img src="assets/designer.png" alt="" className="w-12 h-12 text-white" />
             <TypingAnimation text="React Native Dev Android, iOS" />
           </div>
           <div className="flex">

@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
-import image from "../assets/about33.gif";
 
 const Contact = () => {
   const navigate = useNavigate();
@@ -85,7 +84,7 @@ const Contact = () => {
         </motion.form>
       </div>
       <div className="w-full md:w-1/2">
-        <img src={image} alt="Profile" />
+        <img src="assets/about33.gif" alt="Profile" />
       </div>
     </div>
   );
