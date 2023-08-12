@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://a-gaoba.vercel.app/sitemap.xml

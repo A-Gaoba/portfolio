@@ -71,8 +71,8 @@ function Expertise() {
       },
       {
         root: null,
-        rootMargin: "0px",
-        threshold: 0.1, // Adjust threshold value as needed
+        rootMargin: "10px",
+        threshold: 0.1, 
       }
     );
 
