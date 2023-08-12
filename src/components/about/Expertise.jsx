@@ -87,7 +87,7 @@ function Expertise() {
   return (
     <div
       id="myExpertise"
-      className="md:h-screen h-auto flex items-center text-white flex-col -mt-8 bg-expertise-image"
+      className="md:h-screen h-auto flex items-center text-white flex-col -mt-8 bg-[url(assets/bg-exp.png)] bg-center bg-dunes bg-cover"
     >
       <h1 className="text-4xl font-bold p-8 ml-8 mt-8 self-start">
         My Expertise

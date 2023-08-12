@@ -55,7 +55,7 @@ const Home = () => {
   };
 
   return (
-    <section className="bg-hero-image md:h-screen h-aout flex justify-center items-center w-full bg-center bg-dunes bg-cover md:-mt-24">
+    <section className="bg-[url(assets/coding.gif)] bg-no-repeat md:h-screen h-aout flex justify-center items-center w-full bg-center bg-dunes bg-cover md:-mt-24">
       <div className="container mx-auto px-4 py-16 text-white md:w-[800px] mt-12">
         <TypingAnimation text="I’m Abdulrahman Gaoba" />
         <motion.p {...animateElement} className="text-xs lg:text-base mb-6">
