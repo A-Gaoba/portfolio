@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
 import TypingAnimation from "../TypingAnimation";
-import image from "../../assets/about2.gif";
+import image from "../../assets/about.gif";
 
 const AboutMe = () => {
   const navigate = useNavigate();
@@ -62,7 +62,6 @@ const AboutMe = () => {
       <div className="w-full md:w-1/2 flex justify-center">
         <img src={image} alt="Profile" />
       </div>
-
       <div className="absolute sm:bottom-10 bottom-32 w-full md:flex justify-center items-center hidden">
         <div
           className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2 cursor-pointer"
