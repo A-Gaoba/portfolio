@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import Spline from "@splinetool/react-spline";
 
 import TypingAnimation from "../TypingAnimation";
-import image from "../../assets/about2.gif";
+// import image from "../../assets/about2.gif";
 
 const AboutMe = () => {
   const navigate = useNavigate();
@@ -59,8 +60,8 @@ const AboutMe = () => {
         </div>
       </div>
 
-      <div className="w-full md:w-1/2 flex justify-center">
-        <img src={image} alt="Profile" />
+      <div className="w-full h-screen md:w-1/2 flex justify-center">
+      <Spline scene="https://prod.spline.design/6pS4CJzfHoDbCfAy/scene.splinecode" />
       </div>
 
       <div className="absolute sm:bottom-10 bottom-32 w-full md:flex justify-center items-center hidden">

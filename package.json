@@ -19,6 +19,8 @@
     "@heroicons/react": "^2.0.18",
     "@mui/icons-material": "^5.13.7",
     "@mui/material": "^5.13.7",
+    "@splinetool/react-spline": "^2.2.6",
+    "@splinetool/runtime": "^0.9.418",
     "framer-motion": "^10.12.18",
     "intersection-observer": "^0.12.2",
     "prop-types": "^15.8.1",

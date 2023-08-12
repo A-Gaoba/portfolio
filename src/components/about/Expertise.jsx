@@ -64,7 +64,7 @@ function Expertise() {
             animationControls.stop();
             animationControls.set({
               opacity: 0,
-              y: -50,
+              y: -20,
             });
           }
         });
