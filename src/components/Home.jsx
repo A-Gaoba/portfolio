@@ -12,6 +12,39 @@ import {
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 
+const socialMediaLinks = [
+  {
+    icon: faTwitter,
+    name: "Twitter",
+    href: "https://twitter.com/A_Gaoba",
+    color: "hover:text-sky-400",
+  },
+  {
+    icon: faLinkedin,
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/A-Gaoba",
+    color: "hover:text-[#0072b1]",
+  },
+  {
+    icon: faGithub,
+    name: "GitHub",
+    href: "https://github.com/a-gaoba",
+    color: "hover:text-[#0f0e0e]",
+  },
+  {
+    icon: faInstagram,
+    name: "Instagram",
+    href: "https://www.instagram.com/a-gaoba",
+    color: "hover:text-[#fccc63]",
+  },
+  {
+    icon: faWhatsapp,
+    name: "WhatsApp",
+    href: "https://wa.me/+79174828474",
+    color: "hover:text-[#25D366]",
+  },
+];
+
 const Home = () => {
   const navigate = useNavigate();
 
@@ -21,38 +54,10 @@ const Home = () => {
     transition: { delay: 0.3, duration: 0.8 },
   };
 
-  const iconDetails = [
-    {
-      icon: faTwitter,
-      href: "https://twitter.com/A_Gaoba",
-      color: "hover:text-sky-400",
-    },
-    {
-      icon: faLinkedin,
-      href: "https://www.linkedin.com/in/A-Gaoba",
-      color: "hover:text-[#0072b1]",
-    },
-    {
-      icon: faGithub,
-      href: "https://github.com/a-gaoba",
-      color: "hover:text-[#0f0e0e]",
-    },
-    {
-      icon: faInstagram,
-      href: "https://www.instagram.com/a-gaoba",
-      color: "hover:text-[#fccc63]",
-    },
-    {
-      icon: faWhatsapp,
-      href: "https://wa.me/+79174828474",
-      color: "hover:text-[#25D366]",
-    },
-  ];
-
   return (
     <section className="bg-hero-image md:h-screen h-aout flex justify-center items-center w-full bg-center bg-dunes bg-cover md:-mt-24">
       <div className="container mx-auto px-4 py-16 text-white md:w-[800px] mt-12">
-        <TypingAnimation text="I&rsquo;m Abdulrahman Gaoba" />
+        <TypingAnimation text="I’m Abdulrahman Gaoba" />
         <motion.p {...animateElement} className="text-xs lg:text-base mb-6">
           Welcome to my world of innovation and creativity! As a passionate
           software engineer and web developer with a keen eye for captivating
@@ -62,7 +67,7 @@ const Home = () => {
         <motion.p {...animateElement} className="text-xs lg:text-base mb-6">
           With a relentless drive to deliver excellence, I thrive on crafting
           seamless user experiences that leave a lasting impression. Explore my
-          portfolio, and let‘s embark on an extraordinary digital journey
+          portfolio, and let’s embark on an extraordinary digital journey
           together.
         </motion.p>
         <motion.button
@@ -74,7 +79,7 @@ const Home = () => {
           <ArrowRightAltIcon />
         </motion.button>
         <div className="mt-8 flex space-x-8 ml-2">
-          {iconDetails.map((item, index) => (
+          {socialMediaLinks.map((item, index) => (
             <motion.a
               key={index}
               {...animateElement}
@@ -83,10 +88,12 @@ const Home = () => {
               rel="noopener noreferrer"
               className={item.color}
               transition={{ duration: 0.5, delay: index * 0.15 }}
+              aria-label={item.name} 
             >
               <FontAwesomeIcon
                 icon={item.icon}
                 className="text-xl hover:text-2xl"
+                alt={item.name} 
               />
             </motion.a>
           ))}
