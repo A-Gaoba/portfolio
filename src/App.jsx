@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import NotFound from '.components/NotFound'; 
+import NotFound from './components/NotFound'; 
 import Home from "./components/Home";
 import About from "./components/about/AboutMe";
 import Contact from "./components/Contact";
@@ -37,7 +37,7 @@ function App() {
 
   return (
     <div
-      className="font-mono cursor-circle h-screen bg-[#242735] "
+      className="font-mono cursor-circle h-screen bg-[#242735]"
       onMouseMove={handleMouseMove}
     >
       <div
@@ -55,7 +55,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />
-          <Route component={NotFound} /> 
+          <Route path="/*" element={<NotFound />} />
 
         </Routes>
         <Analytics />
