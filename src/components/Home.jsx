@@ -55,8 +55,8 @@ const Home = () => {
   };
 
   return (
-    <section className="md:h-screen h-aout flex justify-center items-center w-full bg-[url(/assets/coding.gif)] bg-center bg-no-repeat md:-mt-6">
-      <div className="container mx-auto px-4 py-16 text-white md:w-[800px] mt-12 ">
+    <section className="md:h-screen h-aout flex justify-center items-center md:w-[90%] xl:w-[70%] w-full bg-[url(/assets/coding.gif)] bg-center bg-no-repeat md:-mt-6">
+      <div className="container mx-auto px-4 py-16 text-white mt-12 ">
         <TypingAnimation text="I’m Abdulrahman Gaoba" />
         <motion.p {...animateElement} className="text-xs lg:text-base mb-6">
           Welcome to my world of innovation and creativity! As a passionate
@@ -92,7 +92,7 @@ const Home = () => {
             >
               <FontAwesomeIcon
                 icon={item.icon}
-                className="text-xl hover:text-2xl hover:bg-white hover:rounded-xl hover:p-2 transition-all ease-in-out duration-300"
+                className="cursor-pointer w-fit p-2 text-xl 2xl:text-3xl rounded-lg transform transition-transform md:hover:scale-105 hover:scale-110 hover:bg-white hover:transition  hover:duration-1000"
                 alt={item.name}
               />
             </motion.a>

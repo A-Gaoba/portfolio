@@ -47,7 +47,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex flex-wrap justify-center items-center lg:h-screen bg-[#242735] p-12 flex-col-reverse">
+    <div className="flex flex-wrap justify-center items-center lg:h-screen bg-[#242735] md:w-[90%] xl:w-[70%] w-full p-12 flex-col-reverse">
       <div className="w-full md:w-1/2">
         <h1 className="text-white text-4xl font-bold mb-8 hidden lg:block">
           Contact

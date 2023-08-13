@@ -34,7 +34,7 @@ function Navbar() {
   ];
 
   return (
-    <nav className="text-white bg-[#242735] ">
+    <nav className="text-white bg-[#242735] md:w-[90%] xl:w-[70%] w-full sticky top-0 z-50">
       <Toolbar>
         <MotionTypography
           variant="h6"

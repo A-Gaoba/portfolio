@@ -37,7 +37,7 @@ function App() {
 
   return (
     <div
-      className="font-mono cursor-circle h-screen bg-[#242735]"
+      className="font-mono cursor-circle h-screen bg-[#242735] flex flex-col justify-start items-center"
       onMouseMove={handleMouseMove}
     >
       <div

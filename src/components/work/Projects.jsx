@@ -8,7 +8,7 @@ const ProjectsSection = () => {
   const navigate = useNavigate();
 
   return (
-    <motion.section className="p-16">
+    <motion.section className="p-16 md:w-[90%] xl:w-[70%] w-full">
       <TypingAnimation text="My Projects" />
       <ProjectsList />
       <motion.button
