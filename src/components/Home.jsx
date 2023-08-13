@@ -55,8 +55,8 @@ const Home = () => {
   };
 
   return (
-    <section className="md:h-screen h-aout flex justify-center items-center w-full md:-mt-6">
-      <div className="container mx-auto px-4 py-16 text-white md:w-[800px] mt-12">
+    <section className="md:h-screen h-aout flex justify-center items-center w-full bg-[url(/assets/coding.gif)] bg-center bg-no-repeat md:-mt-6">
+      <div className="container mx-auto px-4 py-16 text-white md:w-[800px] mt-12 ">
         <TypingAnimation text="I’m Abdulrahman Gaoba" />
         <motion.p {...animateElement} className="text-xs lg:text-base mb-6">
           Welcome to my world of innovation and creativity! As a passionate

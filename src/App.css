@@ -36,6 +36,19 @@ body {
   }
 }
 
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #242735;
+}
+
+.loading-spinner {
+  size: 80px;
+}
+
+
 /* .bg-hero-image {
   background-image: url("/assets/coding.webm");
   background-size: cover;
@@ -50,15 +63,15 @@ body {
   width: 100vw;
   height: 100vh;
 } */
-
+/* 
 .bg-about-image {
   background-image: url("/assets/bg.png");
   background-size: cover;
   background-position: center;
-}
+} */
 
-.bg-expertise-image {
+/* .bg-expertise-image {
   background-image: url("/assets/bg-exp.png");
   background-size: cover;
   background-position: center;
-}
+} */
