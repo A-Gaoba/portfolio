@@ -6,6 +6,7 @@ import About from "./components/about/AboutMe";
 import Contact from "./components/Contact";
 import Projects from "./components/work/Projects";
 import { SpinnerInfinity } from 'spinners-react';
+import { Analytics } from '@vercel/analytics/react';
 
 
 
@@ -54,6 +55,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />
         </Routes>
+        <Analytics />
       </BrowserRouter>
     </div>
   );
