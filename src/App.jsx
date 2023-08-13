@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import NotFound from '.components/NotFound'; 
 import Home from "./components/Home";
 import About from "./components/about/AboutMe";
 import Contact from "./components/Contact";
@@ -54,6 +55,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />
+          <Route component={NotFound} /> 
+
         </Routes>
         <Analytics />
       </BrowserRouter>
