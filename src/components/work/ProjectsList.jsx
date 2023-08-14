@@ -29,7 +29,7 @@ const ProjectsList = () => {
     {
       title: "GaobaVid - YouTube Clone",
       description:
-        "krystallpoll is a business work offer a swimming pools and swimming clubs and their needs",
+        "YouTube clone that replicates the core features of the original platform, allowing users to browse and watch videos",
       technologies: ["React", "Material UI", "YouTube API"],
       imageUrl: "/projectsImages/gaobavide.png",
       link: "https://gaobavid.netlify.app/",
@@ -37,7 +37,7 @@ const ProjectsList = () => {
     {
       title: "Protechies compony",
       description:
-        "a leading web development company dedicated to transforming your ideas into innovative digital solutions.",
+        "A leading web development company dedicated to transforming your ideas into innovative digital solutions.",
       technologies: ["React", "Tailwind", "TypeScript API"],
       imageUrl: "/projectsImages/protechies.png",
       link: "https://protechies.netlify.app//",
@@ -45,7 +45,7 @@ const ProjectsList = () => {
     {
       title: "crystallpool compony",
       description:
-        "YouTube clone that replicates the core features of the original platform, allowing users to browse and watch videos",
+        "Crystallpoll is a business work offer a swimming pools and swimming clubs and their needs ",
       technologies: ["React", "Tailwind", "TypeScript"],
       imageUrl: "/projectsImages/crystallpool.png",
       link: "https://crystallpool.vercel.app/",
