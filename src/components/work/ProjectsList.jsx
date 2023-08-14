@@ -6,7 +6,7 @@ const ProjectsList = () => {
       title: "Sharaf Almahaqeri",
       description:
         "Sharaf Almahaqeri's portfolio website showcases his skills, achievements, and information",
-      technologies: ["React", "Tailwind CSS"],
+      technologies: ["HTML", "CSS", "JavaScript"],
       imageUrl: "/projectsImages/sharaf.png",
       link: "https://almahaqeri.vercel.app/",
     },
